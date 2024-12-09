@@ -50,6 +50,7 @@ body {
 .scroll-area:nth-of-type(4) {
     background: #8360A6;
 }
+<<<<<<< HEAD
 .floating-object {
     position: fixed;
     top: 10%;
@@ -60,3 +61,7 @@ body {
     border-radius: 50%;
     transition: transform 0.3s ease, top 0.3s ease, left 0.3s ease;
   }
+=======
+
+/* vvvc */
+>>>>>>> f3b35ba2560b202d8ed27b92d9dd834dccead8a5
