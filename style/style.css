@@ -42,7 +42,7 @@ body {
 }
 
 .flipbook .page {
-    background: white;
+    background: #D8DBBD;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
