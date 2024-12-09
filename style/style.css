@@ -91,7 +91,12 @@ body {
 	width: 40%;
 	object-fit: cover;
     margin: 20px;
-	
+    transition: transform 0.3s ease;
+
+}
+.flipbook .page img:hover {
+    transform: scale(1.2);
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); */
 }
 
 .flipbook .page small{
