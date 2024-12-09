@@ -13,7 +13,10 @@ body {
     height: 100vh;
     width: 100vw;
 	overflow: hidden;
-	background: #f1c40f;
+    background: linear-gradient(135deg, #1F4529, #47663B);
+    background-size: 400% 400%;
+    animation: gradientBackground 6s ease infinite;627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
+   
 }
 
 .flipbook {
@@ -22,17 +25,20 @@ body {
 }
 
 .flipbook .hard {
-    background: #c0392b !important;
-    color: #fff;
+    background: #E8ECD7!important;
+    color: #47663B;
     font-weight: bold;
-    border: none; 
+    border: none;
+    font-size: 25px;
+    
 }
 
 .flipbook .hard small{
 	font-style: italic;
 	font-weight: lighter;
 	opacity: 0.7;
-	font-size: 14px;
+	font-size: 10px;
+    
 }
 
 .flipbook .page {
@@ -43,6 +49,7 @@ body {
 	align-items: center;
     gap: 10px;
     border: 1px solid rgba(0, 0, 0, 0.11);
+    
 }
 
 .page img{
