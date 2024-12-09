@@ -50,3 +50,13 @@ body {
 .scroll-area:nth-of-type(4) {
     background: #8360A6;
 }
+.floating-object {
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    transition: transform 0.3s ease, top 0.3s ease, left 0.3s ease;
+  }
