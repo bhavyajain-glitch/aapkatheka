@@ -1,26 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>01</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pokemon Magazine</title>
 </head>
 
 <body>
-    <div class="floating-object"></div>
-    <div class="scroll-container">
-        <div class="scroll-area">1</div>
-        <div class="scroll-area">2</div>
-        <div class="scroll-area">3</div>
-        <div class="scroll-area">4</div>
+    <div class="flipbook">
+        <div class="hard">My Pokemon Gallery <small>~ HankTheTank</small></div>
+        <div class="hard"></div>
+        <div>
+            <img src="images/Martini.png" alt="" />
+            <small> Martini </small>
+        </div>
+        <div>
+            <img src="images/Mojito.png" alt="" />
+            <small> Mojito </small>
+        </div>
+        <div>
+            <img src="images/Passion Fruit Mojito.png" alt="" />
+            <small> Arbok </small>
+        </div>
+        <div>
+            <img src="images/Raspberry Mojito.png" alt="" />
+            <small> Arbok </small>
+        </div>
+        <div>
+            <img src="images/Rosemary Gin Fizz.png" alt="" />
+            <small> Pikachu </small>
+        </div>
+        <div>
+            <img src="images/Spicy Margarita.png" alt="" />
+            <small> Arbok </small>
+        </div>
+        <div class="hard">Thank You <small>~ HankTheTank</small></div>
     </div>
 
+    <script src="jquery.js"></script>
+    <script src="turn.js"></script>
+    <script>
+        $(".flipbook").turn();
+    </script>
 </body>
-<<<<<<< HEAD
-<script src="script.js"></script>
-</html>
-=======
-</html>
 
-<!-- dfvsdfb -->
->>>>>>> f3b35ba2560b202d8ed27b92d9dd834dccead8a5
+</html>
