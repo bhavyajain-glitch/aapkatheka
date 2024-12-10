@@ -89,7 +89,9 @@ body {
 	width: 40%;
 	object-fit: cover;
     margin: 20px;
+    margin-left: 130px;
     transition: transform 0.3s ease;
+    padding-left: 30px;
 
 }
 .flipbook .page img:hover {
