@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shake It Up - Donate to La Vie en Cocktail</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', 'Arial', sans-serif;
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #1b5e20;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar .logo img {
+            height: 50px;
+        }
+        .navbar .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .navbar .nav-links li {
+            margin: 0 15px;
+        }
+        .navbar .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+        .navbar .nav-links a:hover {
+            color: #aed581;
+        }
+        header {
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1rem;
+            margin: 5px 0 15px;
+        }
+        .container {
+            text-align: center;
+            padding: 30px 20px;
+        }
+        .container h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #1b5e20;
+        }
+        .container img {
+            width: 200px;
+            border-radius: 10px;
+            margin: 20px 10px;
+            transition: transform 0.3s ease;
+        }
+        .container img:hover {
+            transform: scale(1.1);
+        }
+        .donate-message {
+            font-size: 1.2rem;
+            color: #388e3c;
+            margin: 20px auto;
+            width: 80%;
+        }
+        .donate-message em {
+            font-style: italic;
+            color: #43a047;
+        }
+        .qr-code {
+            margin: 30px auto;
+        }
+        .qr-code img {
+            width: 150px;
+        }
+        .donate-button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: white;
+            background-color: #43a047;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            text-decoration: none;
+        }
+        .donate-button:hover {
+            background-color: #388e3c;
+        }
+        .footer {
+            background-color: #1b5e20;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        .footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="image/Screenshot_2024-12-10_at_12.27.12_AM-removebg-preview.png" alt="La Vie en Cocktail Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Catalog</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </div>
+
+    <header>
+        <h1>🍸 Shake It Up! 🍹</h1>
+        <p>Your generosity could be the missing ingredient in our perfect mix!</p>
+    </header>
+
+    <div class="container">
+        <h2>Why Donate? (It’s not on the rocks!)</h2>
+        <p class="donate-message">
+            We’re blending passion, creativity, and a splash of fun to bring you the ultimate cocktail guide. But hey, even the best mixologists need a little tip 💰 to keep the shaker shaking! 
+            <br><em>Donate now and let’s stir up something incredible together!</em>
+        </p>
+        
+        <img src="image/IMG_6829.jpg" alt="Bhand Karan" title="Margarita">
+        <img src="image/IMG_6831.jpg" alt="Bhand Priyanshu" title="Martini">
+        <img src="image/IMG_6827.jpg" alt="Bhand Eren" title="Piña Colada">
+
+        <h2>Give Us a Shot! 🥃</h2>
+        <div class="qr-code">
+            <img src="WhatsApp Image 2024-12-10 at 22.46.58.jpeg" alt="QR Code for Donation" title="Scan to Donate">
+        </div>
+        <p class="donate-message">
+            Scan this QR code to serve up your support! Think of it as your way of “buying us a drink.” Cheers! 🍻
+        </p>
+
+        <a href="https://www.example.com/donate" class="donate-button">Pour Some Love 💚</a>
+    </div>
+
+    <div class="footer">
+        <p>Thanks for keeping the spirits high! Follow us on social media for more shenanigans. 🥂</p>
+    </div>
+</body>
+</html>
