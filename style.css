@@ -51,6 +51,17 @@ header nav ul{
 header nav{
     border-left: 1px solid var(--border-color);
 }
+header .happy {
+    margin-right: 20px;
+    justify-self: end;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
 .carousel{
     margin-top: -80px;
     width: 100%;

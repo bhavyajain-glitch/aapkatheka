@@ -18,6 +18,9 @@
                 <li><a href="about.html">About</a></li>
             </ul>
         </nav>
+        <ul class="happy">
+            <p>No of visits  <strong id="visit-count">0</strong></p>
+        </ul>
     </header>
 
     <main>
@@ -106,6 +109,50 @@
             </div>
         </section>
     </main>
+    <script>
+        const API_URL = "https://api.jsonbin.io/v3/b/67587b34ad19ca34f8d8db62"; // Replace with your JSONBin URL
+        const API_KEY = "$2a$10$dtiwm9DwWE4SpL8jPlb3D.fALzFObhblvrRueJvZ8Kiu88/nTVabS"; // Replace with your JSONBin API Key
+
+        async function updateVisitCount() {
+            try {
+                // Fetch the current visit count
+                let response = await fetch(API_URL, {
+                    headers: {
+                        "X-Master-Key": API_KEY
+                    }
+                });
+
+                if (!response.ok) {
+                    throw new Error("Failed to fetch data from JSONBin.");
+                }
+
+                let data = await response.json();
+                let visitCount = data.record.visitCount;
+
+                // Increment the count
+                visitCount++;
+
+                // Update the visit count in JSONBin
+                await fetch(API_URL, {
+                    method: "PUT",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "X-Master-Key": API_KEY
+                    },
+                    body: JSON.stringify({ visitCount })
+                });
+
+                // Update the count on the webpage
+                document.getElementById('visit-count').innerText = visitCount;
+            } catch (error) {
+                console.error("Error updating visit count:", error);
+                document.getElementById('visit-count').innerText = "Error!";
+            }
+        }
+
+        // Call the function to update the count
+        updateVisitCount();
+        </script>
 
     <script src="script/app.js"></script>
 </body>
