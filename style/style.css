@@ -12,8 +12,6 @@ header{
 header .logo img{
     width: 120%;
     margin-left: 1px;
-    
-
 }
 header .logo{
     display: flex;
@@ -35,14 +33,12 @@ header nav ul{
 header nav{
     border-left: 1px solid var(--border-color);
 }
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 	font-family: "Poppins", sans-serif;
 }
-
 body {
     display: grid;
     place-content: center;
@@ -51,8 +47,8 @@ body {
 	overflow: hidden;
     background: linear-gradient(135deg, #1F4529, #47663B);
     background-size: 400% 400%;
-    animation: gradientBackground 6s ease infinite;627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
-   
+    /* animation: gradientBackground(6s ease infinite; 627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%); */
+  
 }
 
 .flipbook {
@@ -131,9 +127,6 @@ header.dashboard .logo img {
         height: 100px; 
         width: auto;  
     }
-    
-}
-
 header.dashboard nav ul {
     list-style: none;
     display: flex;
