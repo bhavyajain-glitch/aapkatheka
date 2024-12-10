@@ -1,114 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/style.css" />
-    <title>La Vie en Cocktail</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header class="dashboard">
-        <div class="logo">
-            <img src="images/logo.png" alt="La Vie en Cocktail Logo" />
-        </div>
-        <nav>
+    
+    <header>
+        <figure class="logo">
+            <img src="images/logo.png" alt="">
+        </figure>
+        <nav class="main-nav">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about-us">About Us</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">About</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="flipbook">
+    <main>
+        <section class="carousel next">
+            <div class="list">
+                <article class="item other_1">
+                    <div class="main-content" 
+                    style="background-color: #9c4d2f;">
+                        <div class="content">
+                            <h2>Basil Smash</h2>
+                            <p class="price">Elegance in Every Sip</p>
+                            <p class="description">
+                                The Basil Smash is the epitome of sophistication, where simplicity meets artistry. Vibrant green hues cascade through its crystal-clear form, a reflection of nature’s grace and bounty. This cocktail is a symphony of herbal notes, kissed by the zest of citrus and carried by the smooth embrace of gin.
+                            </p>
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="images/1.png" alt="">
+                        <figcaption>Basil Smash: Elegance in Every Sip</figcaption>
+                    </figure>
+                </article>
+                <article class="item active">
+                    <div class="main-content" 
+                    style="background-color: #f5bfaf;">
+                        <div class="content">
+                            <h2>East 8 Hold Up</h2>
+                            <p class="price">Tropical Elegance Elevated</p>
+                            <p class="description">
+                                The East 8 Hold Up is a dazzling blend of tropical and citrus flavors, embodying elegance with a playful edge. This modern cocktail harmonizes the tangy sweetness of pineapple and passion fruit with the tartness of lime and the botanical depth of gin. Its vibrant, sunset-inspired hue hints at the bold and refreshing experience within.
+                            </p>
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="images/2.png" alt="">
+                        <figcaption>East 8 Hold Up: Tropical Elegance Elevated</figcaption>
+                    </figure>
+                </article>
+                <article class="item other_2">
+                    <div class="main-content" 
+                    style="background-color: #dedfe1;">
+                        <div class="content">
+                            <h2>Boulevardier</h2>
+                            <p class="price">Timeless Sophistication</p>
+                            <p class="description">
+                                The Boulevardier is a timeless blend of bourbon, vermouth, and Campari, offering rich complexity and classic sophistication in every sip. Its deep amber hue and bold, harmonious flavors evoke effortless elegance, blending tradition with modern luxury.
+                            </p>
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="images/3.png" alt="">
+                        <figcaption>Boulevardier: Timeless Sophistication</figcaption>
+                    </figure>
+                </article>
+                <article class="item">
+                    <div class="main-content" 
+                    style="background-color: #7eb63d;">
+                        <div class="content">
+                            <h2>Savoia Americano</h2>
+                            <p class="price">Effortless elegance in every bubble</p>
+                            <p class="description">
+                                The Savoia Americano combines vermouth's herbal richness with soda water's crisp effervescence, creating a ruby-red cocktail of timeless charm and elegant refreshment—a true toast to old-world sophistication.
+                            </p>
+                            <button class="addToCard">
+                                <a>Savoia Americano</a>
+                            </button>
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="images/4.png" alt="">
+                        <figcaption>Savoia Americano: Effortless elegance in every bubble.</figcaption>
+                    </figure>
+                </article>
+            </div>
+            <div class="arrows">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+        </section>
+    </main>
 
-        <div class="hard">Cocktail Mixing Guide<small>Discover the Art of Mixology</small></div>
-        <div class="hard">
-            <div style="text-align: center;">La Vie en Cocktail</div>
-            <div><small style="display: block; padding:15px ;">Where every sip is a story, and every cocktail is an
-                    art.</small></div>
-            <div><small style="display: block; padding:15px ;">Step into the world of mixology, where flavors meet
-                    creativity and traditions are reimagined. This guide is your companion to mastering five of the most
-                    iconic cocktails from around the globe.</small></div>
-            <div><small style="display: block; padding:15px ;">Raise your shaker, unleash your inner mixologist, and let’s begin this flavorful adventure.
-                    Here’s to the art of living life en cocktail!
-                </small></div>
-            <div style="font-size: 25px;text-align: left;">Cheers!</div>
-        </div>
-        <div>
-            <img src="images/Martini.png" alt="" />
-            <small style="font-size: 16px ;">Basil Smash </small>
-            <div class="description">
-                <p>"The Basil Smash is a delightful blend of fresh basil, crisp gin, zesty lemon, and a hint of sweetness. Known for its vibrant green hue and refreshing flavor, this cocktail is perfect for any occasion. Shake, sip, and savor the taste of herbaceous elegance!"</p>
-            </div>
-            
-        </div>
-        <div>
-            <img src="images/Mojito.png" alt="" />
-            <small style="font-size: 16px ;"> East 8 Hold Up </small>
-            <div class="description">
-                <p>"The East 8 Hold Up is a tropical-inspired cocktail that combines the exotic sweetness of pineapple with the tangy brightness of passion fruit and lime. Paired with the crispness of vodka and the aromatic touch of Aperol, this vibrant drink is a playful and modern twist on classic tropical flavors. Perfect for summer evenings or when you’re dreaming of sunny shores!"</p>
-            </div>
-            
-        </div>
-        <div>
-            <img src="images/Passion Fruit Mojito.png" alt="" />
-            <small style="font-size: 16px ;"> Boulevardier </small>
-            <div class="description">
-                <p>"The Boulevardier is a timeless classic that blends the bold richness of bourbon with the bittersweet harmony of Campari and sweet vermouth. With its warm, velvety texture and complex flavor profile, this cocktail is perfect for those who enjoy a sophisticated and robust drink. A refined cousin of the Negroni, the Boulevardier exudes elegance and charm in every sip."</p>
-            </div>
-            
-        </div>
-        <div>
-            <img src="images/Raspberry Mojito.png" alt="" />
-            <small style="font-size: 16px ;"> Savoia Americano </small>
-            <div class="description">
-                <p>"Savoia Americano is an elegant aperitif that combines the rich heritage of Italian craftsmanship with modern sophistication. With its harmonious blend of red wine, bitter botanicals, and sweet vermouth, it offers a perfectly balanced flavor profile that’s both refreshing and complex. Whether enjoyed on its own over ice or as a base for cocktails, Savoia Americano embodies timeless Italian charm in every sip."</p>
-            </div>
-            
-            
-        </div>
-        <div>
-            <img src="images/Rosemary Gin Fizz.png" alt="" />
-            <small style="font-size: 16px ;"> Negroni </small>
-            <div class="description">
-                <p>"The Negroni is a bold and sophisticated classic that balances the bittersweet charm of Campari with the depth of gin and the rich sweetness of vermouth. Known for its vibrant red hue and complex flavor profile, this Italian aperitif is a symbol of elegance and timeless taste. Perfect as a pre-dinner drink, the Negroni offers a harmonious blend of bitter, sweet, and botanical notes in every sip."</p>
-            </div>
-            
-        </div>
-        <div>
-            <img src="images/Spicy Margarita.png" alt="" />
-            <small style="font-size: 16px ;"> Purple Reign </small>
-            <div class="description">
-                <p>"The Purple Reign is a visually stunning and luxurious cocktail that combines vibrant fruit flavors with a touch of floral elegance. Its mesmerizing purple hue, achieved with ingredients like blackberries or violet liqueur, makes it as eye-catching as it is delicious. Sweet, tangy, and slightly aromatic, the Purple Reign is a royal treat perfect for special occasions or whenever you want to feel a little extra."</p>
-            </div>
-            
-            
-        </div>
-        <div class="hard">About Us <small>La Vie en Cocktail: A Creative Mixology Experience</small><small
-                style="padding: 15px;">Welcome to La Vie en Cocktail, a project born out of our passion for design,
-                interactivity, and, of course, the art of cocktails</small>
-            Our Purpose<small style="padding: 15px;">This project is more than just a cocktail guide; it’s a blend of
-                creativity and technical skill. Designed as part of our academic journey, La Vie en Cocktail showcases
-                how storytelling and technology can come together to create an engaging and educational
-                experience.</small>
-
-            Meet the Team<small>
-                <ol>
-                    <li>Bhavya Jain</li>
-                    <li>Priyanshu Singh</li>
-                    <li>Karan Rawat</li>
-                </ol>
-            </small>
-        </div>
-    </div>
-
-    <script src="script/jquery.js"></script>
-    <script src="script/turn.js"></script>
-    <script>
-        $(".flipbook").turn();
-    </script>
+    <script src="script/app.js"></script>
 </body>
-
 </html>
