@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savoia Americano Mixing Guide</title>
+    <style>
+       body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f6e0d5;
+    height: 10000vh;
+    overflow-x: hidden;
+    color: #4a3224;
+}
+
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 60px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    padding-top: 80px; /* Added padding to prevent overlap */
+    background-color: #f6e0d5;
+}
+
+.video-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8a584c;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+video {
+    max-height: 90vh;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.content-section {
+    flex: 2;
+    margin-left: 20px;
+    padding: 20px;
+    padding-top: 60px; /* Added padding to ensure no overlap */
+    background-color: #fffdfb;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    height: 100%;
+    overflow-y: auto;
+    border-left: 5px solid #8a584c;
+}
+
+.content-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #8a584c;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.content-section h2 {
+    font-size: 1.8em;
+    margin: 20px 0 10px 0;
+    color: #4a3224;
+    font-weight: 600;
+    border-bottom: 2px solid #8a584c;
+    padding-bottom: 5px;
+}
+
+.content-section ul {
+    padding-left: 20px;
+    list-style-type: disc;
+    color: #5d3c33;
+}
+
+.content-section ul li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.content-section p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+
+.content-section::-webkit-scrollbar {
+    width: 10px;
+}
+
+.content-section::-webkit-scrollbar-track {
+    background: #f6e0d5;
+}
+
+.content-section::-webkit-scrollbar-thumb {
+    background-color: #8a584c;
+    border-radius: 10px;
+}
+
+header.dashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffe6d9;
+    padding: 10px 20px;
+    border-bottom: 2px solid #8a584c;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 60px; /* Explicit height to match the padding */
+}
+
+header.dashboard .logo img {
+    height: 100px;
+    width: auto;
+}
+
+header.dashboard nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header.dashboard nav ul li {
+    font-size: 16px;
+}
+
+header.dashboard nav ul li a {
+    text-decoration: none;
+    color: #8a584c;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header.dashboard nav ul li a:hover {
+    color: #613d33;
+}
+
+    </style>
+</head>
+
+<body>
+    <header class="dashboard">
+        <div class="logo">
+            <img src="logo.png" alt="La Vie en Cocktail Logo" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-us">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="video-section">
+            <video id="savoiaAmericanoVideo" src="Savoia Americano.mp4" muted></video>
+        </div>
+        <div class="content-section">
+            <h1>Savoia Americano</h1>
+            <h2>Ingredients:</h2>
+            <ul>
+                <li>1 oz Sweet Vermouth</li>
+                <li>1 oz Campari</li>
+                <li>2 oz Soda Water</li>
+                <li>Ice cubes</li>
+                <li>Orange slice for garnish</li>
+            </ul>
+            <h2>Instructions:</h2>
+            <p>
+                1. Fill a highball glass with ice cubes.<br>
+                2. Add sweet vermouth and Campari to the glass.<br>
+                3. Top with soda water and gently stir to combine.<br>
+                4. Garnish with an orange slice and enjoy your Savoia Americano!
+            </p>
+        </div>
+    </div>
+    <script>
+        const video = document.getElementById('savoiaAmericanoVideo');
+
+        video.addEventListener('loadedmetadata', () => {
+            const videoDuration = video.duration;
+            const maxScroll = document.body.scrollHeight - window.innerHeight;
+            const scrollFactor = 1;
+
+            window.addEventListener('scroll', () => {
+                const scrollPosition = window.scrollY;
+                const scrollFraction = scrollPosition / (maxScroll * scrollFactor);
+                const videoTime = Math.max(0, Math.min(videoDuration, scrollFraction * videoDuration));
+                video.currentTime = videoTime;
+            });
+        });
+
+        video.muted = true;
+        video.pause();
+    </script>
+</body>
+
+</html>
