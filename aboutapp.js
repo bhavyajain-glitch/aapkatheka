@@ -58,5 +58,3 @@ thumbnails.forEach((thumbnail, index) => {
         showSlider();
     })
 })
-
-// mycomment
