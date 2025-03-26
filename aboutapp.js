@@ -52,10 +52,11 @@ function setPositionThumbnail () {
     }
 }
 
-// click thumbnail
 thumbnails.forEach((thumbnail, index) => {
     thumbnail.addEventListener('click', () => {
         itemActive = index;
         showSlider();
     })
 })
+
+// mycomment
